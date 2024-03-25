@@ -1,0 +1,100 @@
+{
+    "books": [
+        {
+            "bookId": "1",
+            "bookName": "The Vanishing Half",
+            "author": "Brit Bennett",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/73c9b449c_207878.jpg",
+            "review": "The Vanishing Half is a captivating novel that explores race, identity, and family secrets. It tells the story of the Vignes sisters, Desiree and Stella, who run away from their small, southern black community at age sixteen. Desiree chooses to return home after facing domestic violence, while Stella decides to pass for white and build a new life. The novel follows the divergent paths of the sisters and their daughters, highlighting the complexities of race, gender, and identity in America. Through Bennett's masterful storytelling, readers are drawn into a world where secrets are kept and identities are hidden, ultimately leading to a powerful exploration of what it means to be true to oneself.",
+            "totalPages": 352,
+            "rating": 4.4,
+            "category": "Fiction",
+            "tags": [
+                "Family Saga",
+                "Identity"
+            ],
+            "publisher": "Riverhead Books",
+            "yearOfPublishing": 2020
+        },
+        {
+            "bookId": "2",
+            "bookName": "Where the Crawdads Sing",
+            "author": "Delia Owens",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/df80e671b_193282.jpg",
+            "review": "Where the Crawdads Sing is a mesmerizing mystery novel set in the marshes of North Carolina. It follows the story of Kya Clark, known as the  who grows up isolated from society in the coastal marshes. When a murder occurs in the small town, Kya becomes the prime suspect. The novel alternates between Kya's coming-of-age story and the investigation into the murder, keeping readers captivated until the very end. With vivid descriptions of nature, rich character development, and a gripping plot, Delia Owens creates a hauntingly beautiful tale of love, loss, and survival in the wild.",
+            "totalPages": 384,
+            "rating": 4.5,
+            "category": "Mystery",
+            "tags": [
+                "Nature",
+                "Southern Fiction"
+            ],
+            "publisher": "G.P. Putnam's Sons",
+            "yearOfPublishing": 2018
+        },
+        {
+            "bookId": "3",
+            "bookName": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/69387fd97_193450.jpg",
+            "review": "The Silent Patient is a gripping psychological thriller with a shocking twist. The story revolves around Alicia Berenson, a famous painter who murders her husband and then stops speaking. Theo Faber, a psychotherapist, becomes obsessed with her case and is determined to uncover the truth behind her silence. As Theo delves deeper into Alicia's past, he uncovers dark secrets that will leave readers guessing until the very end. With its complex characters, unreliable narrator, and mind-bending plot twists, Alex Michaelides keeps readers on the edge of their seats from start to finish.",
+            "totalPages": 336,
+            "rating": 4.1,
+            "category": "Thriller",
+            "tags": [
+                "Psychological",
+                "Mystery"
+            ],
+            "publisher": "Celadon Books",
+            "yearOfPublishing": 2019
+        },
+        {
+            "bookId": "4",
+            "bookName": "The Guest List",
+            "author": "Lucy Foley",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20…60X372/The_Guest_List-Lucy_Foley-efbe0-296703.jpg",
+            "review": "The Guest List is a suspenseful thriller set on a remote island during a glamorous wedding. As the guests gather for the celebration, tensions rise, and dark secrets come to light. When a murder occurs, everyone becomes a suspect, and the island becomes a battleground for survival. With its atmospheric setting, intricate plotting, and morally complex characters, Lucy Foley delivers a gripping and immersive reading experience. The Guest List will keep readers guessing until the very end, leaving them breathless and eager for more.",
+            "totalPages": 320,
+            "rating": 4.0,
+            "category": "Thriller",
+            "tags": [
+                "Suspense",
+                "Mystery"
+            ],
+            "publisher": "William Morrow",
+            "yearOfPublishing": 2020
+        },
+        {
+            "bookId": "5",
+            "bookName": "পদ্মজা",
+            "author": "ইলমা বেহরোজ",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Poddoja-Elma_Behrouz-28676-365838.jpg",
+            "review": "এটা সুধুই উপন্যাস নয়।এটা প্রেম,আনন্দ, সুখ,বেদনা,দুঃখ সব মিলিয়ে এাকাকার হয়ে অন্য এক জগতে নিয়ে গেছে।ভেবেছিলাম কাঁদব না।কিন্তু পারিনি। সেদিন রাতে ছাদে খোলা আকাশের দিকে তাকিয়ে প্রাণ ভরে কেঁদেছি।ব্যাথা কমেনি আরো বেড়েছে।সারাক্ষণ শুধু পদ্মজা, আমির,পূর্নাকে দেখতে পাই।বিষাদের যন্ত্রণায় ক্লান্ত হয়ে যাচ্ছি।অনেক রাগ হচ্ছে লেখিকার উপর।মানুষের ভালোবাসা পাওয়ার জন্য উনি।এমন এক পদ্মজার জন্ম দিয়েছেন। এটা পড়ার পর থেকে নিজের ভালোবাসার উপর সন্দেহ শুরু হয়ে গিয়েছে।আমিও কি আমার কলিজার টুকরো বউরে ঠকিয়ে গড়েছি আমির এর মতো অন্য এক জগৎ।",
+            "totalPages": 416,
+            "rating": 4.9,
+            "category": "Mystery",
+            "tags": [
+                "Contemporary",
+                "Love & Peace"
+            ],
+            "publisher": "অন্যধারা",
+            "yearOfPublishing": 2024
+        },
+        {
+            "bookId": "6",
+            "bookName": "The Midnight Library",
+            "author": "Matt Haig",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20…/The_Midnight_Library-Matt_Haig_-0cf76-304638.jpg",
+            "review": "The Midnight Library is a heartwarming and philosophical novel about regret, choices, and second chances. The story centers on Nora Seed, who finds herself in a library between life and death, where each book represents a different version of her life. As Nora explores these alternate realities, she grapples with the decisions she's made and the paths not taken. Ultimately, The Midnight Library is a celebration of life's infinite possibilities and the power of self-discovery. Matt Haig's poignant prose and imaginative storytelling make this a book that will stay with readers long after they've turned the final page.",
+            "totalPages": 288,
+            "rating": 4.2,
+            "category": "Fiction",
+            "tags": [
+                "Fantasy",
+                "Philosophical"
+            ],
+            "publisher": "Viking",
+            "yearOfPublishing": 2020
+        }
+    ]
+}
