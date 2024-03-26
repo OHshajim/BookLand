@@ -1,40 +1,21 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { getStoredBook, saveStoredBook } from "../Utility/LocalStorage";
+import { getStoredBook, getStoredReadBook, saveStoredBook, saveStoredReadBook } from "../Utility/LocalStorage";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useState } from "react";
 
 const BookDetails = () => {
     const books = useLoaderData()
     const { id } = useParams()
-    // console.log(id,book);
     const details = books.find(detail => detail.bookId === id)
-    // console.log(details);
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = details
-    // const [saveBooks, setToSave] = useState([])
-    function handleRead() {
-        // saveStoredBook(bookId)
-        toast.success('successfully add', {
-            position: "top-right",
-            autoClose: 4000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-        }
-        );
-        // setToSave(bookId)
-    }
 
-    function handleWish() {
-        const storedBook = getStoredBook()
-        const isRead = storedBook.includes(bookId)
-        console.log(isRead);
-        if (!isRead) {
-            console.log("wish");
+    function handleRead() {
+        const storedReadBook = getStoredReadBook()
+        const isExist = storedReadBook.includes(bookId)
+        if (!isExist) {
+            // console.log("nai");
+            saveStoredReadBook(bookId)
+            saveStoredBook(bookId)
             toast.success('successfully add', {
                 position: "top-right",
                 autoClose: 4000,
@@ -45,9 +26,7 @@ const BookDetails = () => {
                 progress: undefined,
                 theme: "light",
                 transition: Bounce,
-            }
-            );
-            saveStoredBook(bookId)
+            });
         }
         else {
             toast.error('Already added', {
@@ -61,8 +40,44 @@ const BookDetails = () => {
                 theme: "light",
                 transition: Bounce,
             });
-
         }
+
+    }
+
+    function handleWish() {
+        const storedBook = getStoredBook()
+        
+        const isRead = storedBook.includes(bookId)
+        if (!isRead) {
+            saveStoredBook(bookId)
+            toast.success('successfully add', {
+                position: "top-right",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            }
+            );
+        }
+        else {
+            toast.error('Already added', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+        }
+
+
     }
     return (
         <div className="flex lg:flex-row flex-col my-20 xl:mx-32 lg:mx-28 sm:mx-20  ">

@@ -1,15 +1,15 @@
-// import { useLoaderData } from "react-router-dom";
-// import { getStoredBook } from "../Utility/LocalStorage";
 import { CiLocationOn } from "react-icons/ci";
 import { MdPeopleAlt } from "react-icons/md";
 import { HiDocumentChartBar } from "react-icons/hi2";
 import { NavLink } from "react-router-dom";
+import PropTypes from 'prop-types'; // ES6
+
 const Read = ({ book }) => {
     const { bookId, bookName, author, image,  totalPages, rating, category, tags, publisher, yearOfPublishing } = book
 
     return (
         <div>
-            <div className="card card-side bg-base-100 shadow-xl p-6">
+            <div className="card flex-col lg:flex-row  bg-base-100 shadow-xl ">
                 <figure><img src={image} alt="book" className="p-6" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{bookName}</h2>
@@ -51,5 +51,10 @@ const Read = ({ book }) => {
     )
 }
 
+
+Read.propTypes = {
+    book: PropTypes.object.isRequired,
+
+}
 
 export default Read;
