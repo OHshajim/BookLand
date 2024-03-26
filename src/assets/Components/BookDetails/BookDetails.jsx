@@ -11,7 +11,7 @@ const BookDetails = () => {
     const details = books.find(detail => detail.bookId === id)
     // console.log(details);
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = details
-    const [saveBooks, setToSave] = useState([])
+    // const [saveBooks, setToSave] = useState([])
     function handleRead() {
         saveStoredBook(bookId)
         toast.success('successfully add', {
@@ -26,7 +26,7 @@ const BookDetails = () => {
             transition: Bounce,
         }
         );
-        setToSave(bookId)
+        // setToSave(bookId)
     }
 
     function handleWish() {
@@ -62,7 +62,7 @@ const BookDetails = () => {
             );
         }
         else {
-            toast.error('🦄 Wow so easy!', {
+            toast.error('Already added', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
