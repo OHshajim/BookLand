@@ -8,6 +8,7 @@ import {
 import './index.css'
 import Root from './assets/Components/Root/Root';
 import Home from './assets/Components/Home/Home';
+import BookDetails from './assets/Components/BookDetails/BookDetails';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,15 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home></Home>
-      }
+        element:<Home></Home>,
+        loader:()=>fetch('../public/Books.JSON')
+      },
+      {
+        path:"/details/:id",
+        element:<BookDetails></BookDetails>,
+        loader:()=>fetch('../public/Books.JSON')
+      },
+
     ],
   },
 ]);
