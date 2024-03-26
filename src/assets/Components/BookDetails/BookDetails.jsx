@@ -1,5 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { getStoredBook, saveStoredBook } from "../Utility/LocalStorage";
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
 
 const BookDetails = () => {
     const books = useLoaderData()
@@ -8,12 +11,70 @@ const BookDetails = () => {
     const details = books.find(detail => detail.bookId === id)
     // console.log(details);
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = details
-
-    function handleSave() {
+    const [saveBooks, setToSave] = useState([])
+    function handleRead() {
         saveStoredBook(bookId)
+        toast.success('successfully add', {
+            position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        }
+        );
+        setToSave(bookId)
+    }
+
+    function handleWish() {
+        // saveStoredBook(bookId)
+        // toast.success('successfully add', {
+        //     position: "top-right",
+        //     autoClose: 4000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     progress: undefined,
+        //     theme: "light",
+        //     transition: Bounce,
+        // }
+        // );
         const storedBook = getStoredBook()
-        const isExist = books.find(book => book.bookId === storedBook.includes(bookId))
-        console.log(isExist, storedBook);
+        const isRead = storedBook.includes(bookId)
+        console.log(isRead);
+        if (!isRead) {
+            console.log("wish");
+            toast.success('successfully add', {
+                position: "top-right",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            }
+            );
+        }
+        else {
+            toast.error('🦄 Wow so easy!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+
+        }
     }
     return (
         <div className="flex lg:flex-row flex-col my-20 xl:mx-32 lg:mx-28 sm:mx-20  ">
@@ -58,11 +119,23 @@ const BookDetails = () => {
                         </table>
                     </div>
                     <div className="flex mt-10">
-                        <button onClick={handleSave} className="btn border border-[#1313134D] bg-transparent ">Read</button>
-                        <button className="btn bg-[#50B1C9] text-white">Wishlist</button>
+                        <button onClick={handleRead} className="btn border border-[#1313134D] bg-transparent ">Read</button>
+                        <button onClick={handleWish} className="btn bg-[#50B1C9] text-white">Wishlist</button>
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={4001}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition:Bounce />
         </div>
     );
 };
