@@ -6,7 +6,7 @@ const Navbar = () => {
     const listItem = <>
         <li><NavLink to="/" >Home</NavLink></li>
         <li><NavLink to="/listedBook">Listed Books</NavLink></li>
-        <li><NavLink to="/read">Pages to Read</NavLink></li>
+        <li><NavLink to="/readChart">Pages to Read</NavLink></li>
     </>
     return (
         <div className="xl:mx-32 lg:mx-28 sm:mx-20 ">

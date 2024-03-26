@@ -13,7 +13,7 @@ const BookDetails = () => {
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = details
     // const [saveBooks, setToSave] = useState([])
     function handleRead() {
-        saveStoredBook(bookId)
+        // saveStoredBook(bookId)
         toast.success('successfully add', {
             position: "top-right",
             autoClose: 4000,
@@ -30,19 +30,6 @@ const BookDetails = () => {
     }
 
     function handleWish() {
-        // saveStoredBook(bookId)
-        // toast.success('successfully add', {
-        //     position: "top-right",
-        //     autoClose: 4000,
-        //     hideProgressBar: false,
-        //     closeOnClick: true,
-        //     pauseOnHover: true,
-        //     draggable: true,
-        //     progress: undefined,
-        //     theme: "light",
-        //     transition: Bounce,
-        // }
-        // );
         const storedBook = getStoredBook()
         const isRead = storedBook.includes(bookId)
         console.log(isRead);
@@ -60,6 +47,7 @@ const BookDetails = () => {
                 transition: Bounce,
             }
             );
+            saveStoredBook(bookId)
         }
         else {
             toast.error('Already added', {
