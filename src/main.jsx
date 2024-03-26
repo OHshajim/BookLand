@@ -11,6 +11,7 @@ import Home from './assets/Components/Home/Home';
 import BookDetails from './assets/Components/BookDetails/BookDetails';
 import Listed from './assets/Components/ListedBooks/Listed';
 import ReadChart from './assets/Components/PageToRead/ReadChart';
+import KidsZone from './assets/Components/Kids/KidsZone';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
         path: "/readChart",
         element: <ReadChart></ReadChart>,
         loader: () => fetch('../public/Books.JSON')
+      },
+      {
+        path: "/kidsZone",
+        element: <KidsZone></KidsZone>,
+        loader: () => fetch('../public/KidsBook.JSON')
       },
       {
         path: "/details/:id",

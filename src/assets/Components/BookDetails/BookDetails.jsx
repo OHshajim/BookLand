@@ -80,9 +80,9 @@ const BookDetails = () => {
 
     }
     return (
-        <div className="flex lg:flex-row flex-col my-20 xl:mx-32 lg:mx-28 sm:mx-20  ">
+        <div className="flex justify-between lg:flex-row flex-col my-20 xl:mx-32 lg:mx-28 sm:mx-20 mx-5  gap-10">
             <div className="flex-1">
-                <img src={image} alt="book" className="h-full p-10" />
+                <img src={image} alt="book" className="h-full p-10 bg-[#1313130D] rounded-2xl" />
             </div>
             <div className="flex-1">
                 <h1 className="text-4xl font-bold mb-1">{bookName}</h1>
@@ -121,9 +121,9 @@ const BookDetails = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className="flex mt-10">
-                        <button onClick={handleRead} className="btn border border-[#1313134D] bg-transparent ">Read</button>
-                        <button onClick={handleWish} className="btn bg-[#50B1C9] text-white">Wishlist</button>
+                    <div className="flex mt-10 gap-4">
+                        <button onClick={handleRead} className="btn px-5 border border-[#1313134D] bg-transparent ">Read</button>
+                        <button onClick={handleWish} className="btn px-5 bg-[#50B1C9] text-white">Wishlist</button>
                     </div>
                 </div>
             </div>

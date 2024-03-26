@@ -1,0 +1,69 @@
+{
+    "books": [
+        {
+            "bookId": "1",
+            "bookName": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Harry_Potter_and_the_Sorcerers_Stone_Boo-J_K_Rowling-0bf90-361630.jpg",
+            "review": "Harry Potter and the Sorcerer's Stone is the first book in the magical series by J.K. Rowling. It follows the journey of Harry Potter, a young wizard, as he discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry. With its enchanting world, lovable characters, and thrilling adventures, this book has captured the hearts of readers of all ages.",
+            "totalPages": 309,
+            "rating": 4.7,
+            "category": "Fantasy",
+            "tags": [
+                "Magic",
+                "Adventure"
+            ],
+            "publisher": "Scholastic",
+            "yearOfPublishing": 1997
+        },
+        {
+            "bookId": "2",
+            "bookName": "Diary of a Wimpy Kid",
+            "author": "Jeff Kinney",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Diary_of_a_Wimpy_Kid-Jeff_Kinney-90b56-326040.jpg",
+            "review": "Diary of a Wimpy Kid is a hilarious and relatable series written in the form of a journal by middle schooler Greg Heffley. Filled with humorous illustrations and witty observations, these books chronicle Greg's misadventures as he navigates the ups and downs of school, family, and friendship.",
+            "totalPages": 217,
+            "rating": 4.5,
+            "category": "Humor",
+            "tags": [
+                "Middle Grade",
+                "Comedy"
+            ],
+            "publisher": "Amulet Books",
+            "yearOfPublishing": 2007
+        },
+        {
+            "bookId": "3",
+            "bookName": "Matilda",
+            "author": "Roald Dahl",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a88f4805b_212156.jpg",
+            "review": "Matilda is a beloved classic by Roald Dahl about a precocious young girl with extraordinary powers. Despite facing neglect and cruelty from her family and school principal, Matilda discovers her love of reading and uses her intelligence to outsmart the adults around her. This heartwarming tale celebrates the power of imagination, kindness, and standing up for what is right.",
+            "totalPages": 240,
+            "rating": 4.3,
+            "category": "Children's Fiction",
+            "tags": [
+                "Magic",
+                "Friendship"
+            ],
+            "publisher": "Puffin Books",
+            "yearOfPublishing": 1988
+        },
+        {
+            "bookId": "4",
+            "bookName": "Charlotte's Web",
+            "author": "E.B. White",
+            "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Charlottes_Web-E_B_White-b35e8-353679.jpg",
+            "review": "Charlotte's Web is a timeless classic that tells the story of a pig named Wilbur and his unlikely friendship with a spider named Charlotte. When Wilbur discovers he is destined for the dinner table, Charlotte hatches a plan to save him using her web-spinning abilities. This heartwarming tale explores themes of friendship, loyalty, and the cycle of life.",
+            "totalPages": 184,
+            "rating": 4.5,
+            "category": "Children's Fiction",
+            "tags": [
+                "Friendship",
+                "Animals"
+            ],
+            "publisher": "Harper & Brothers",
+            "yearOfPublishing": 1952
+        }
+       
+    ]
+}

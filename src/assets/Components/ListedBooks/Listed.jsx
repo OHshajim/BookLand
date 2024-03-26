@@ -47,9 +47,9 @@ const Listed = () => {
     }
 
     return (
-        <div className="my-20 xl:mx-32 lg:mx-28 sm:mx-20">
-            <h1 className="text-center">Books </h1>
-            <div className="flex  justify-center workSans ">
+        <div className="my-10 xl:mx-32 lg:mx-28 sm:mx-20 mx-5">
+             <h1 className="text-center text-3xl p-10 bg-[#1313130D] rounded-2xl">Books</h1>
+            <div className="flex  justify-center workSans my-10">
                 <details className="dropdown">
                     <summary className="m-1 btn bg-[#23BE0A] text-white px-10">Sort by <span className="text-xl"><FiChevronDown /></span></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box ">
@@ -62,15 +62,15 @@ const Listed = () => {
             <div>
 
                 <Tabs>
-                    <TabList>
+                    <TabList className="workSans">
                         <Tab>Read Books</Tab>
                         <Tab>Wishlist Books</Tab>
                     </TabList>
 
-                    <TabPanel>
+                    <TabPanel className="space-y-5 mt-10">
                         {read.map(book => <Read key={book.bookId} book={book}></Read>)}
                     </TabPanel>
-                    <TabPanel>
+                    <TabPanel className="space-y-5 mt-10">
                         {wish.map(book => <Wishlist key={book.bookId} book={book}></Wishlist>)}
                     </TabPanel>
                 </Tabs>

@@ -1,5 +1,4 @@
-import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { getStoredReadBook } from '../Utility/LocalStorage';
 import { useEffect, useState } from 'react';
 // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -8,23 +7,6 @@ import { useEffect, useState } from 'react';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
-const data1 = [
-
-    {
-        name: 'Page E',
-        uv: 3000,
-
-    },
-    {
-        name: 'Page F',
-        uv: 1090,
-
-    },
-    {
-        name: 'Page G',
-        uv: 90,
-    },
-];
 
 const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -49,10 +31,12 @@ const ReadChart = () => {
     const storedReadBooks = getStoredReadBook()
     const displayReadBook = data.filter(book => storedReadBooks.includes(book.bookId))
     return (
-        <div>
-            <BarChart
-                width={1500}
-                height={600}
+       <div className='my-20 xl:mx-32 lg:mx-28 sm:mx-20  '> 
+         <div className='  w-full   h-[300px] lg:h-[500px] bg-[#13131308] p-5 lg:p-14 rounded-3xl  '>
+            <ResponsiveContainer>
+            <BarChart 
+                width={1 }
+                height={400}
                 data={displayReadBook}
                 margin={{
                     top: 20,
@@ -70,7 +54,9 @@ const ReadChart = () => {
                     ))}
                 </Bar>
             </BarChart>
+            </ResponsiveContainer>
         </div>
+       </div>
     );
 };
 
