@@ -1,9 +1,7 @@
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid,  ResponsiveContainer } from 'recharts';
 import { getStoredReadBook } from '../Utility/LocalStorage';
 import { useEffect, useState } from 'react';
-// eslint-disable-next-line react-hooks/rules-of-hooks
-// const books = useLoaderData()
-// for read
+
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -31,11 +29,11 @@ const ReadChart = () => {
     const storedReadBooks = getStoredReadBook()
     const displayReadBook = data.filter(book => storedReadBooks.includes(book.bookId))
     return (
-       <div className='my-20 xl:mx-32 lg:mx-28 sm:mx-20  '> 
-         <div className='  w-full   h-[300px] lg:h-[500px] bg-[#13131308] p-5 lg:p-14 rounded-3xl  '>
+       <div className='my-20 xl:mx-32 lg:mx-28 sm:mx-20  mx-5'> 
+         <div className='  w-full   h-[300px] lg:h-[500px] bg-[#13131308] p-5 lg:px-8 rounded-3xl  '>
             <ResponsiveContainer>
             <BarChart 
-                width={1 }
+                width={100}
                 height={400}
                 data={displayReadBook}
                 margin={{

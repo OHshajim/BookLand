@@ -10,13 +10,13 @@ const Read = ({ book }) => {
     return (
         <div>
             <div className="card flex-col lg:flex-row  bg-base-100 shadow-xl border border-[#13131326]">
-                <figure><img src={image} alt="book" className="p-6" /></figure>
+                <figure><img src={image} alt="book" className="p-5" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{bookName}</h2>
+                    <h2 className="card-title text-2xl font-bold">{bookName}</h2>
                     <div className="workSans">
-                        <h4 className="text-xl text-[#131313CC] font-medium my-2">By : {author}</h4>
+                        <h4 className="text-base text-[#131313CC] font-medium mt-1 mb-5">By : {author}</h4>
 
-                        <div className="workSans md:flex items-center gap-3 text-base font-medium  my-2  space-y-3 md:space-y-0">
+                        <div className="workSans md:flex items-center gap-3 text-base font-medium    space-y-3 md:space-y-0 mb-5">
                             <h4 className="text-base font-bold">Tag</h4>
                             {
                                 tags.map((tag, idx) => <h4 key={idx} className="bg-[#23BE0A0D] text-[#23BE0A] rounded-[30px] px-4 py-2">#{tag}</h4>)
@@ -27,7 +27,7 @@ const Read = ({ book }) => {
                             </div>
                         </div>
 
-                        <div className="md:flex space-y-3 md:space-y-0 gap-10 items-center">
+                        <div className="md:flex space-y-3 md:space-y-0 gap-10 items-center mb-5" >
                             <div className="flex gap-2 items-center">
                                 <div className="text-xl"><MdPeopleAlt /></div>
                                 <h4>Publisher : {publisher}</h4>

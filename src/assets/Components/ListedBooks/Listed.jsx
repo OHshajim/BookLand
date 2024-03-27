@@ -22,23 +22,23 @@ const Listed = () => {
         setWish(displayBook)
         setRead(displayReadBook)
         handleSort()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     function handleSort(sort) {
         if (sort === "Rating") {
-            const rating = displayBook.sort((a, b) => b.rating- a.rating)
-            const ratingToRead = displayReadBook.sort((a, b) => b.rating- a.rating)
+            const rating = displayBook.sort((a, b) => b.rating - a.rating)
+            const ratingToRead = displayReadBook.sort((a, b) => b.rating - a.rating)
             setWish(rating)
             setRead(ratingToRead)
         }
-        else if (sort === "NumberOfPage"){
+        else if (sort === "NumberOfPage") {
             const NumberOfPage = displayBook.sort((a, b) => b.totalPages - a.totalPages)
             const NumberOfPageToRead = displayReadBook.sort((a, b) => b.totalPages - a.totalPages)
             setWish(NumberOfPage)
             setRead(NumberOfPageToRead)
         }
-        else if (sort === "PublisherYear"){
+        else if (sort === "PublisherYear") {
             const PublisherYear = displayBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
             const PublisherYearToRead = displayReadBook.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
             setWish(PublisherYear)
@@ -48,7 +48,7 @@ const Listed = () => {
 
     return (
         <div className="my-10 xl:mx-32 lg:mx-28 sm:mx-20 mx-5">
-             <h1 className="text-center text-3xl p-10 bg-[#1313130D] rounded-2xl">Books</h1>
+            <h1 className="text-center text-3xl p-10 bg-[#1313130D] rounded-2xl">Books</h1>
             <div className="flex  justify-center workSans my-10">
                 <details className="dropdown">
                     <summary className="m-1 btn bg-[#23BE0A] text-white px-10">Sort by <span className="text-xl"><FiChevronDown /></span></summary>
@@ -62,10 +62,13 @@ const Listed = () => {
             <div>
 
                 <Tabs>
-                    <TabList className="workSans">
-                        <Tab>Read Books</Tab>
-                        <Tab>Wishlist Books</Tab>
-                    </TabList>
+                    <div className="workSans">
+
+                        <TabList >
+                            <Tab>Read Books</Tab>
+                            <Tab>Wishlist Books</Tab>
+                        </TabList>
+                    </div>
 
                     <TabPanel className="space-y-5 mt-10">
                         {read.map(book => <Read key={book.bookId} book={book}></Read>)}
