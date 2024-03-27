@@ -16,7 +16,7 @@ const BookDetails = () => {
             // console.log("nai");
             saveStoredReadBook(bookId)
             saveStoredBook(bookId)
-            toast.success('successfully add', {
+            toast.success('Congratulations to read this book ', {
                 position: "top-right",
                 autoClose: 4000,
                 hideProgressBar: false,
@@ -29,7 +29,7 @@ const BookDetails = () => {
             });
         }
         else {
-            toast.error('Already added', {
+            toast.error('Its already been added !!!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -50,7 +50,7 @@ const BookDetails = () => {
         const isRead = storedBook.includes(bookId)
         if (!isRead) {
             saveStoredBook(bookId)
-            toast.success('successfully add', {
+            toast.success('successfully add to Wishlist', {
                 position: "top-right",
                 autoClose: 4000,
                 hideProgressBar: false,
@@ -64,7 +64,7 @@ const BookDetails = () => {
             );
         }
         else {
-            toast.error('Already added', {
+            toast.error('Its will not be added to the list !!!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
