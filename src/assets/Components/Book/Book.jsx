@@ -17,8 +17,8 @@ const Book = ({ book }) => {
                         }
                     </div>
                     <h2 className="card-title">{bookName}</h2>
-                    <p>By : {author}</p>
-                    <div className="flex items-center border-t border-dashed border-[#13131326] pt-3">
+                    <p className="workSans">By : {author}</p>
+                    <div className="flex items-center border-t border-dashed border-[#13131326] pt-3 workSans">
                         <p>{category}</p>
                         <div className="flex items-center gap-1">
                             <p>{rating} </p>

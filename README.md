@@ -1,6 +1,6 @@
 #BookLand 
 
-Live link : https://660379ae8d264c2a6ecd7a78--thriving-capybara-2191a3.netlify.app/
+Live link : https://thriving-capybara-2191a3.netlify.app
 
 ***Features and Bullet Points of Our Website
 1.Our BookLand Provides you most popular and interesting books to read .

@@ -14,8 +14,8 @@ const KidsBook = ({ book }) => {
                         }
                     </div>
                     <h2 className="card-title">{bookName}</h2>
-                    <p>By : {author}</p>
-                    <div className="flex items-center border-t border-dashed border-[#13131326]">
+                    <p className="workSans">By : {author}</p>
+                    <div className="flex items-center border-t border-dashed border-[#13131326] workSans pt-3">
                         <p>{category}</p>
                         <div className="flex items-center gap-1">
                             <p>{rating} </p>
