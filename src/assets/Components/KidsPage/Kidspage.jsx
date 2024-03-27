@@ -20,7 +20,7 @@ const Kidspage = () => {
 
     const [Data, setData] = useState([])
     useEffect(() => {
-        fetch('../../../../public/KidsBook.JSON')
+        fetch('../KidsBook.JSON')
             .then(res => res.json())
             .then(data => setData(data.books))
     }, [])

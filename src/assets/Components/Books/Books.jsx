@@ -3,7 +3,6 @@ import Book from "../Book/Book";
 
 const Books = () => {
     const books = useLoaderData()
-    // console.log(books);
     return (
         <div className="my-20 xl:mx-32 lg:mx-28 sm:mx-20  ">
             <p className="text-center text-4xl font-bold mb-5">Books</p>

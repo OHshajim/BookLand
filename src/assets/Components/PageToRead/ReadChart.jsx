@@ -22,7 +22,7 @@ const TriangleBar = (props) => {
 const ReadChart = () => {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch('../../../../public/Books.JSON')
+        fetch('../Books.JSON')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
