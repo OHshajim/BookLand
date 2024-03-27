@@ -64,7 +64,7 @@ const BookDetails = () => {
             );
         }
         else {
-            toast.error('Its already been read !!!', {
+            toast.error('Its already added to the list !!!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
