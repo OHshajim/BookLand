@@ -29,7 +29,7 @@ const BookDetails = () => {
             });
         }
         else {
-            toast.error('Its already been added !!!', {
+            toast.error('Its already been read !!!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -50,7 +50,7 @@ const BookDetails = () => {
         const isRead = storedBook.includes(bookId)
         if (!isRead) {
             saveStoredBook(bookId)
-            toast.success('successfully add to Wishlist', {
+            toast.success('Its already been read !!!', {
                 position: "top-right",
                 autoClose: 4000,
                 hideProgressBar: false,

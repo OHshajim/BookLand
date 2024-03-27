@@ -18,7 +18,7 @@ const Book = ({ book }) => {
                     </div>
                     <h2 className="card-title">{bookName}</h2>
                     <p>By : {author}</p>
-                    <div className="flex items-center border-t border-dashed border-[#13131326]">
+                    <div className="flex items-center border-t border-dashed border-[#13131326] pt-3">
                         <p>{category}</p>
                         <div className="flex items-center gap-1">
                             <p>{rating} </p>
